@@ -27,7 +27,7 @@ export function ContactForm() {
     dispatch(
       addContact({
         name: contactName,
-        phone: number,
+        number: number,
       })
     );
 

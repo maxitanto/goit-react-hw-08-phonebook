@@ -28,9 +28,9 @@ export function ContactList() {
   if (items.length && filteredContacts.length) {
     return (
       <ul className={css.contactList}>
-        {filteredContacts.map(({ id, name, phone }) => (
+        {filteredContacts.map(({ id, name, number }) => (
           <li key={id} className={css.listItem}>
-            <ContactListItem name={name} number={phone} id={id} />
+            <ContactListItem name={name} number={number} id={id} />
           </li>
         ))}
       </ul>
